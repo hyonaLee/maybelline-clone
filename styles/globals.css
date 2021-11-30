@@ -14,3 +14,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.TopDiv{
+  display: flex;
+  flex-direction: column;
+}
+.TopInnerDiv{
+  display: flex;
+}
+.TopLogoDiv > img{
+  display: block;
+  width: 80px;
+  border-radius: 50%;
+}
