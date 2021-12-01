@@ -11,6 +11,7 @@ export default function Item({ item }) {
       product_type,
       product_link,
     } = item;
+    console.log("come",item)
     return (
       <>
         <div className={styles.wrap}>

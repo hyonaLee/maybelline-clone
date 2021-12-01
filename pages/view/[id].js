@@ -11,6 +11,7 @@ const Post = ({ item }) => {
             <title>{item.name}</title>
             <meta name="description" content={item.description}></meta>
           </Head>
+          {name} 환경 입니다.
           <Item item={item} />
         </>
       )}

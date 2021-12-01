@@ -17,16 +17,16 @@ import {
         <List>
           <List.Item>
             <List.Icon name="users" />
-            <List.Content>Semantic UI</List.Content>
+            <List.Content>velog</List.Content>
           </List.Item>
           <List.Item>
             <List.Icon name="marker" />
-            <List.Content>New York, NY</List.Content>
+            <List.Content>Korea, 대한민국</List.Content>
           </List.Item>
           <List.Item>
             <List.Icon name="mail" />
             <List.Content>
-              <a href="mailto:jack@semantic-ui.com">jack@semantic-ui.com</a>
+              <a href="mailto:jack@semantic-ui.com">email@mail.com</a>
             </List.Content>
           </List.Item>
           <List.Item>

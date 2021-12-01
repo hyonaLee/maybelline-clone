@@ -1,9 +1,8 @@
-import Axios from "axios";
+import axios from "axios";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Divider, Header, Loader } from "semantic-ui-react";
 import ItemList from "../src/compnent/ItemList";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [list, setList] = useState([]);
@@ -13,7 +12,7 @@ export default function Home() {
     "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline";
 
   function getData() {
-    Axios.get(API_URL).then((res) => {
+    axios.get(API_URL).then((res) => {
       console.log(res.data);
       setList(res.data);
       setIsLoading(false);
@@ -28,7 +27,7 @@ export default function Home() {
     <div>
       <Head>
         <title>HOME | velog</title>
-        <meta name="description" content="코딩 앙마 홈입니다."></meta>
+        <meta name="description" content="홈입니다."></meta>
       </Head>
       {isLoading && (
         <div style={{ padding: "300px 0" }}>
