@@ -8,11 +8,10 @@ export default function Home() {
   const [list, setList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const API_URL =
-    "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline";
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
   function getData() {
-    axios.get(API_URL).then((res) => {
+    Axios.get(API_URL).then((res) => {
       console.log(res.data);
       setList(res.data);
       setIsLoading(false);
@@ -26,8 +25,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>HOME | velog</title>
-        <meta name="description" content="홈입니다."></meta>
+        <title>HOME | 코딩앙마</title>
+        <meta name="description" content="코딩 앙마 홈입니다."></meta>
       </Head>
       {isLoading && (
         <div style={{ padding: "300px 0" }}>
