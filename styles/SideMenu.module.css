@@ -1,0 +1,25 @@
+.wrap{
+    background-color: rgba(53, 53, 53, 0.534);
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    font-size: 20px;
+    z-index: 99;
+}
+.menus{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menus > li{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+.menus > li:hover{
+    background-color: rgba(53, 53, 53, 0.699);
+}

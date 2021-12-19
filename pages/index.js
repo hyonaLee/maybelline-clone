@@ -7,20 +7,30 @@ export default function Home({list}) {
   return (
     <div>
       <Head>
-        <title>HOME | velog</title>
-        <meta name="description" content="홈입니다."></meta>
+        <title>Mayblline | HOME</title>
+        <meta name="description" content="MAYBLLINE HOMEPAGE"></meta>
       </Head>
         <>
-          <Header as="h3" style={{ paddingTop: 40 }}>
+        <div>
+          <video muted playsinline autoPlay loop width="100%">
+          <source src="images/video.mp4" type="video/mp4"/>
+          cosmetic video
+          </video>
+        </div>
+          <Header as="h2" style={{ padding: 30 }}>
             베스트 상품
           </Header>
-          <Divider />
           <ItemList list={list.slice(0, 9)} />
-          <Header as="h3" style={{ paddingTop: 40 }}>
+          <Divider />
+          <Header as="h2" style={{ padding: 30 }}>
             신상품
           </Header>
+          <ItemList list={list.slice(9,14)} />
           <Divider />
-          <ItemList list={list.slice(9)} />
+          <Header as="h2" style={{ padding: 30 }}>
+            전체상품
+          </Header>
+          <ItemList list={list.slice(14)} />
         </>
     </div>
   );

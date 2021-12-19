@@ -21,7 +21,7 @@ export default function Login() {
         <Form.Field inline>
           <input type="password" placeholder="Password" />
         </Form.Field>
-        <Button color="blue" onClick={login}>
+        <Button color="rgba(53, 53, 53, 0.699)" onClick={login}>
           LOGIN
         </Button>
       </Form>

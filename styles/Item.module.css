@@ -1,35 +1,57 @@
 .wrap {
+    margin: auto;
+    width: 1000px;
     display: flex;
-    padding: 40px 0;
+    flex-direction: row;
+    gap: 50px;
+    padding: 100px;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
   }
   
   .img_item {
-    flex: 200px 0 0;
+    flex: 1;
   }
   .img_item img {
     display: block;
+    width: 200px;
+    margin: auto;
   }
   
   .info_item {
-    flex: 1 0 0;
+    flex: 1;
   }
   
   .tit_item {
     display: block;
     font-size: 24px;
-    margin-top: 20px;
   }
   
   .num_price {
     display: block;
     font-size: 34px;
     margin-top: 20px;
-    color: #00bcd4;
+    color: orange;
   }
   
   .txt_info {
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     margin: 20px 0 40px;
+  }
+
+  .user_select > input{
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+
+  .detail{
+    margin: auto;
+    width: 1000px;
+  }
+
+  .detail_contents{
+    font-size: 18px;
   }

@@ -1,7 +1,7 @@
 import Axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Button } from "semantic-ui-react";
+import { Button,Divider } from "semantic-ui-react";
 
 export default function Admin() {
   const router = useRouter();
@@ -31,9 +31,10 @@ export default function Admin() {
     checkLogin();
   }, []);
   return (
-    <>
-      admin
-      {isLogin && <Button onClick={logout}>Logout</Button>}
-    </>
+    <div className="content">
+      <h2>Admin Page</h2>
+      <Divider />
+      {isLogin && <Button color="rgba(53, 53, 53, 0.699)" onClick={logout}>Logout</Button>}
+    </div>
   );
 }

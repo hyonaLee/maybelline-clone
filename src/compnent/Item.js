@@ -25,11 +25,16 @@ export default function Item({ item }) {
               {category ? `${category}/` : ""}
               {product_type}
             </span>
-            <Button color="orange">구매하기</Button>
+            <div className={styles.user_select}>
+              <input type="number" defaultValue="1" />
+              <Button color="orange">구매하기</Button>
+            </div>
           </div>
         </div>
-        <Header as="h3">Description</Header>
-        <p style={{ paddingBottom: 20, fontSize: 18 }}>{description}</p>
+        <div className={styles.detail}>
+        <h2>Description</h2>
+        <p className={styles.detail_contents}>{description}</p>
+        </div>
       </>
     );
   }
