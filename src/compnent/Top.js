@@ -3,6 +3,9 @@ import Gnb from "./Gnb";
 import { FaBars } from "react-icons/fa";
 import SideMenu from './SideMenu';
 import { useRouter } from "next/router";
+import styles from "../../styles/Top.module.css"
+import logo from "../../public/images/MAYBELLINE LOGO.png"
+import Image from 'next/image';
 
 export default function Top() {
   const [clickMenu, setClickMenu] = useState(false)
@@ -13,21 +16,23 @@ export default function Top() {
     setClickMenu(!clickMenu)
   }
   return (
-    <>
-    <div className="TopDiv">
-      <div className="TopInnerDiv">
-        <div className="TopLogoDiv">
-          <img src="/images/MAYBELLINE LOGO.png" alt="logo" onClick={() => {
-          router.push("/");
-        }}/>
+    <div className={styles.wrap}>
+      <div className={styles.innerdiv}>
+        <div className={styles.logodiv}>
+          <Image src={logo}
+           alt="Logo"
+           width="100px"
+           height="40px"
+           onClick={() => {
+           router.push("/");
+          }}/>
         </div>
         <Gnb />
-        <div className="TopMenuBtn">
-          <FaBars className='MenuIcon' onClick={IsClickMenu}/>
+        <div>
+          <FaBars className={styles.MenuIcon} onClick={IsClickMenu}/>
         </div>
         </div>
-    </div>
     {clickMenu === true ? <SideMenu clickMenu={clickMenu} setClickMenu={setClickMenu}/> : null}
-    </>
+    </div>
   );
 }

@@ -30,6 +30,7 @@ export default function Admin() {
   useEffect(() => {
     checkLogin();
   }, []);
+  
   return (
     <div className="content">
       <h2>Admin Page</h2>

@@ -5,7 +5,7 @@ import Footer from '../src/compnent/Footer'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div style={{ width: "1000px", margin: "0 auto" }}>
+    <div>
       <Top />
       <Component {...pageProps} />
       <Footer />

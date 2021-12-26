@@ -1,0 +1,21 @@
+.wrap{
+    background-color: #1B1C1D;
+    width: 100%;
+    padding-left: 20px;
+}
+  
+.innerdiv{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+  
+.MenuIcon{
+    fill: white;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}

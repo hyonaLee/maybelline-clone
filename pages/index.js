@@ -17,20 +17,22 @@ export default function Home({list}) {
           cosmetic video
           </video>
         </div>
-          <Header as="h2" style={{ padding: 30 }}>
+        <div className="content">
+          <Header as="h2">
             베스트 상품
           </Header>
           <ItemList list={list.slice(0, 9)} />
           <Divider />
-          <Header as="h2" style={{ padding: 30 }}>
+          <Header as="h2">
             신상품
           </Header>
           <ItemList list={list.slice(9,14)} />
           <Divider />
-          <Header as="h2" style={{ padding: 30 }}>
+          <Header as="h2">
             전체상품
           </Header>
           <ItemList list={list.slice(14)} />
+          </div>
         </>
     </div>
   );

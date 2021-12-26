@@ -15,37 +15,6 @@ a {
   box-sizing: border-box;
 }
 
-/* --------------------------------------------------TOP */
-
-.TopDiv{
-  background-color: #1B1C1D;
-}
-
-.TopInnerDiv{
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
-
-.TopLogoDiv > img{
-  width: 90px;
-  height: 30px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.MenuIcon {
-  fill: white;
-  font-size: 30px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-/* --------------------------------------------------ABOUT */
-
 .content{
   margin: auto;
   width: 1000px;
