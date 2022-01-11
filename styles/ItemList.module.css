@@ -1,7 +1,5 @@
 .wrap {
-  width: 100px;
-  min-width: 50px;
-  max-width: 300px;
+  width: 100%;
   text-align: center;
   padding: 10px 0px;
 }
