@@ -21,8 +21,8 @@ export default function Top() {
         <div className={styles.logodiv}>
           <Image src={logo}
            alt="Logo"
-           width="100px"
-           height="40px"
+          //  width="100px"
+          //  height="40px"
            onClick={() => {
            router.push("/");
           }}/>

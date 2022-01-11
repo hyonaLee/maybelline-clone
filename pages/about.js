@@ -1,10 +1,6 @@
 import {
-    Button,
     Divider,
-    Form,
-    Header,
-    List,
-    TextArea,
+    List
   } from "semantic-ui-react";
 import Head from "next/head";
   
