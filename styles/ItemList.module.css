@@ -7,6 +7,7 @@
   box-shadow: inset 0px 0px 1px black;
 }
 .img_item {
+  width: 90%;
   display: block;
   margin: 0 auto;
 }
