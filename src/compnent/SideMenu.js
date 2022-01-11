@@ -10,7 +10,7 @@ export default function SideMenu({setClickMenu,clickMenu}) {
     return (
         <div className={styles.wrap}>
             <ul className={styles.menus}>
-                <li onClick={IsClickMenu}>Skin</li>
+                <li onClick={IsClickMenu}>확인</li>
                 <li onClick={IsClickMenu}>Eyes</li>
                 <li onClick={IsClickMenu}>Lip</li>
                 <li onClick={IsClickMenu}>Nail</li>
